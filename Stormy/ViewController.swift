@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        if let plistPath = NSBundle.mainBundle().pathForResource("CurrentWeather", ofType: "plist"), let weatherDictionary = NSDictionary(contentsOfFile: plistPath), let CurrentWeatherDictionary = weatherDictionary["currenlty"] as? [String: AnyObject] {
+        
+            let currentWeather = CurrentWeather(weatherDictionary: CurrentWeatherDictionary)
+        
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,4 +28,8 @@ class ViewController: UIViewController {
 
 
 }
+
+
+
+
 
