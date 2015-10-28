@@ -16,27 +16,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentPrecipitationLabel: UILabel?
 
     private let forecastAPIKey = "54fd9453fdd74d53592297e64441614c"
+    let coordinate: (lat: Double, long: Double = (37.8267,-122.423)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        let baseURL = NSURL(string: "https://api.forecast.io/forecast/\(forecastAPIKey)/")
-        let forecastURL = NSURL(string: "37.8267,-122.423", relativeToURL: baseURL)
-        
-        // Use NSURLSession API to fetch data
-        let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
-        let session = NSURLSession(configuration: configuration)
-        
-        // NSURLRequest object
-        let request = NSURLRequest(URL: forecastURL!)
-        
-        let dataTask = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
-            print(data)
-            print("Background thread")
-        })
-        print("Main thread")
-        dataTask.resume()
+        let forecastService = ForecastService(APIKey: forecastAPIKey)
+        forecastService.getForecast(coordinate.lat, long: coordinate.long) {
+            (let currently) in
+            if let currentWeather = currently {
+                
+            }
+        }
     
     }
 
