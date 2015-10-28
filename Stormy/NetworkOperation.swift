@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 class NetworkOperation {
     lazy var config: NSURLSessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration()
     lazy var session: NSURLSession = NSURLSession(configuration: self.config)
