@@ -31,16 +31,16 @@ class NetworkOperation {
                 switch(httpResponse.statusCode){
                 case 200:
                     
-                    print("Good to go!")
+//                    print("Good to go!")
                     
                     do {
                     
-                    print("getting positive response 2+++")
+//                    print("getting positive response 2+++")
                     
                     let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as! [String: AnyObject]
                     completion(jsonDictionary)
                     
-                    print("getting positive response 4 ")
+//                    print("getting positive response 4 ")
                     
                     } catch let error {
                     
@@ -50,7 +50,7 @@ class NetworkOperation {
                     
                     
                     let jsonDictionary = try!NSJSONSerialization.JSONObjectWithData(data!, options:[]) as? [String: AnyObject]
-                    print("getting positive response 4 ")
+//                    print("getting positive response 4 ")
                     completion(jsonDictionary)
                     
                 default:

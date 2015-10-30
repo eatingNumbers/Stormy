@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -59,6 +59,28 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="mem-Dg-dDH">
+                                <rect key="frame" x="190" y="108" width="60" height="60"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="juj-z9-SvG"/>
+                                    <constraint firstAttribute="width" constant="60" id="pU5-yE-z9B"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcatraz Island, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1L2-pz-ucf">
+                                <rect key="frame" x="258" y="127" width="139" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx6-kj-S0f">
+                                <rect key="frame" x="255" y="501" width="91" height="26"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,13 +89,19 @@
                             <constraint firstItem="28P-XW-pBM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0yJ-Qb-vR9"/>
                             <constraint firstItem="sOS-5w-RE8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-67.5" id="2aH-i6-Dei"/>
                             <constraint firstItem="28P-XW-pBM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Vm-Bb-sis"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zx6-kj-S0f" secondAttribute="bottom" constant="73" id="7mE-vI-KYI"/>
                             <constraint firstItem="28P-XW-pBM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KXK-rH-wyD"/>
                             <constraint firstItem="28P-XW-pBM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="185" id="L85-vF-ivr"/>
+                            <constraint firstItem="1L2-pz-ucf" firstAttribute="leading" secondItem="mem-Dg-dDH" secondAttribute="trailing" constant="8" id="Pht-S7-RlI"/>
+                            <constraint firstItem="Zx6-kj-S0f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UyP-qy-avO"/>
+                            <constraint firstItem="28P-XW-pBM" firstAttribute="top" secondItem="mem-Dg-dDH" secondAttribute="bottom" constant="43" id="V59-Jj-kl8"/>
+                            <constraint firstItem="mem-Dg-dDH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="Xmc-he-IVg"/>
                             <constraint firstItem="rtT-fG-utq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="144.5" id="XyR-AS-U3y"/>
                             <constraint firstItem="28P-XW-pBM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bGC-Xc-5yI"/>
                             <constraint firstItem="sOS-5w-RE8" firstAttribute="top" secondItem="28P-XW-pBM" secondAttribute="bottom" constant="12" id="bOQ-8V-Zi1"/>
                             <constraint firstItem="d62-Zd-Vf7" firstAttribute="leading" secondItem="rtT-fG-utq" secondAttribute="trailing" constant="99" id="fwa-sb-v6A"/>
                             <constraint firstItem="28P-XW-pBM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jme-Vb-uvI"/>
+                            <constraint firstItem="28P-XW-pBM" firstAttribute="top" secondItem="1L2-pz-ucf" secondAttribute="bottom" constant="63" id="lc6-3u-Xdd"/>
                             <constraint firstItem="2Up-FG-Fu5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="79" id="m7a-Tf-EtB"/>
                             <constraint firstItem="rtT-fG-utq" firstAttribute="top" secondItem="sOS-5w-RE8" secondAttribute="bottom" constant="8" symbolic="YES" id="oU5-gB-nar"/>
                             <constraint firstItem="rtT-fG-utq" firstAttribute="baseline" secondItem="d62-Zd-Vf7" secondAttribute="baseline" id="q8V-GV-eYd"/>
@@ -100,6 +128,8 @@
                         <outlet property="currentHumidityLabel" destination="rtT-fG-utq" id="WFO-eJ-vkd"/>
                         <outlet property="currentPrecipitationLabel" destination="d62-Zd-Vf7" id="GFc-Yk-uM4"/>
                         <outlet property="currentTemperatureLabel" destination="28P-XW-pBM" id="G9M-P9-u9a"/>
+                        <outlet property="currentWeatherIcon" destination="mem-Dg-dDH" id="Vxk-Kr-SCB"/>
+                        <outlet property="currentWeatherSummary" destination="Zx6-kj-S0f" id="x9Y-j1-H2X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -107,4 +137,7 @@
             <point key="canvasLocation" x="266" y="644"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default" width="30" height="30"/>
+    </resources>
 </document>
