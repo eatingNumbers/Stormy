@@ -81,6 +81,10 @@
                                     <action selector="refreshWeather" destination="BYZ-38-t0r" eventType="touchUpInside" id="6k5-IA-Lsi"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="mGb-CR-T0s">
+                                <rect key="frame" x="290" y="73" width="20" height="20"/>
+                                <animations/>
+                            </activityIndicatorView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="mem-Dg-dDH">
                                 <rect key="frame" x="190" y="115" width="60" height="60"/>
                                 <animations/>
@@ -105,10 +109,12 @@
                             <constraint firstItem="1L2-pz-ucf" firstAttribute="leading" secondItem="mem-Dg-dDH" secondAttribute="trailing" constant="8" id="Pht-S7-RlI"/>
                             <constraint firstItem="Zx6-kj-S0f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UyP-qy-avO"/>
                             <constraint firstItem="28P-XW-pBM" firstAttribute="top" relation="lessThanOrEqual" secondItem="mem-Dg-dDH" secondAttribute="bottom" constant="43" id="V59-Jj-kl8"/>
+                            <constraint firstItem="mGb-CR-T0s" firstAttribute="centerY" secondItem="hXD-oL-rIb" secondAttribute="centerY" id="WrS-65-jIg"/>
                             <constraint firstItem="mem-Dg-dDH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="Xmc-he-IVg"/>
                             <constraint firstItem="rtT-fG-utq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="144.5" id="XyR-AS-U3y"/>
                             <constraint firstItem="28P-XW-pBM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bGC-Xc-5yI"/>
                             <constraint firstItem="sOS-5w-RE8" firstAttribute="top" secondItem="28P-XW-pBM" secondAttribute="bottom" constant="12" id="bOQ-8V-Zi1"/>
+                            <constraint firstItem="mGb-CR-T0s" firstAttribute="centerX" secondItem="hXD-oL-rIb" secondAttribute="centerX" id="f5S-UK-x35"/>
                             <constraint firstItem="d62-Zd-Vf7" firstAttribute="leading" secondItem="rtT-fG-utq" secondAttribute="trailing" constant="99" id="fwa-sb-v6A"/>
                             <constraint firstItem="hXD-oL-rIb" firstAttribute="centerX" secondItem="28P-XW-pBM" secondAttribute="centerX" id="gqB-uF-9ay"/>
                             <constraint firstItem="1L2-pz-ucf" firstAttribute="top" secondItem="hXD-oL-rIb" secondAttribute="bottom" constant="30" id="jCg-qg-DJq"/>
@@ -139,11 +145,13 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="mGb-CR-T0s" id="uB4-Y4-ahf"/>
                         <outlet property="currentHumidityLabel" destination="rtT-fG-utq" id="WFO-eJ-vkd"/>
                         <outlet property="currentPrecipitationLabel" destination="d62-Zd-Vf7" id="GFc-Yk-uM4"/>
                         <outlet property="currentTemperatureLabel" destination="28P-XW-pBM" id="G9M-P9-u9a"/>
                         <outlet property="currentWeatherIcon" destination="mem-Dg-dDH" id="Vxk-Kr-SCB"/>
                         <outlet property="currentWeatherSummary" destination="Zx6-kj-S0f" id="x9Y-j1-H2X"/>
+                        <outlet property="refreshButton" destination="hXD-oL-rIb" id="isd-Hi-MIk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
