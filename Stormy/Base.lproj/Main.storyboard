@@ -77,6 +77,9 @@
                                 <rect key="frame" x="279" y="61" width="43" height="43"/>
                                 <animations/>
                                 <state key="normal" image="refresh"/>
+                                <connections>
+                                    <action selector="refreshWeather" destination="BYZ-38-t0r" eventType="touchUpInside" id="6k5-IA-Lsi"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="mem-Dg-dDH">
                                 <rect key="frame" x="190" y="115" width="60" height="60"/>
